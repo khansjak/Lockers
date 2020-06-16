@@ -91,7 +91,7 @@ class DisplayManager {
     }
 
     private void displayMainContext(String directory) {
-        System.out.println("Welcome to LockMe.com application. Developer: Jerome Tan");
+        System.out.println("Welcome to LockMe.com application. Developer: Javed Khan");
         System.out.println("\nPlease select one of the listed options:");
         System.out.println("1. Display file names in ascending order from the current directory: " + directory);
         System.out.println("2. Display User interface details");
@@ -100,7 +100,7 @@ class DisplayManager {
 
     private File getRootDirectory() {
         String projectPath = System.getProperty("user.dir");
-        String directoryName = projectPath.concat("\\RootDirectory");
+        String directoryName = projectPath.concat("//RootDirectory");
 
         File directory = new File(directoryName);
 
