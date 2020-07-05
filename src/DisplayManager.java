@@ -82,6 +82,7 @@ class DisplayManager {
     }
 
     private void displayUserContext(File directory) {
+        System.out.println("By : Javed A. Khan\n");
         System.out.println("\n1. Add a file to existing directory list (please provide the full path):");
         System.out.println("2. Ignore case sensitivity of file names");
         System.out.println("3. Delete a file from the existing directory list (please provide the file name):");
@@ -91,6 +92,7 @@ class DisplayManager {
     }
 
     private void displayMainContext(String directory) {
+        System.out.println("**********************Lockme***********************\n");
         System.out.println("Welcome to LockMe.com application. Developer: Javed Khan");
         System.out.println("\nPlease select one of the listed options:");
         System.out.println("1. Display file names in ascending order from the current directory: " + directory);

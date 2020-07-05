@@ -26,11 +26,12 @@ class FileManager {
     void addFileToDirectory(File directory, String fileName) {
 
         try {
-            Files.copy(Paths.get(fileName), Paths.get(directory.getPath() + "\\" + Paths.get(fileName).getFileName().toString()));
+            Files.copy(Paths.get(fileName), Paths.get(directory.getPath() + "/" + Paths.get(fileName).getFileName().toString()));
             System.out.println("File successfully added to root directory.");
+            System.out.println(Paths.get(fileName)+directory.getPath()+"-"+Paths.get(fileName).getFileName().toString());
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("File not added. An error occurred.");
+            System.out.println("File not added. An error occurred."+Paths.get(fileName)+directory.getPath()+"/"+Paths.get(fileName).getFileName().toString());
         }
     }
 
@@ -83,6 +84,7 @@ class FileManager {
             result.forEach(System.out::println);
         } catch (IOException e) {
             e.printStackTrace();
+            //test
         }
     }
 }
